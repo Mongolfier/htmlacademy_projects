@@ -1,4 +1,12 @@
-@import url("../fonts/fonts.css");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
@@ -13,6 +21,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -41,17 +54,30 @@ a {
 
 .section__lead {
   margin: 0;
-  text-align: center;
-  font-weight: 300;
   font-style: normal;
-  color: #A07B50;
+  font-weight: 300;
   font-size: 16px;
   line-height: 26px;
+  text-align: center;
+  color: #a07b50;
 }
 
-.pets,
-.breed-features,
-.faq,
+.pets {
+  background-color: #1f1c1d;
+}
+
+.breed-features {
+  background-color: #1f1c1d;
+}
+
+.faq {
+  background-color: #1f1c1d;
+}
+
 .reviews {
-  background-color: #1F1C1D;
+  background-color: #1f1c1d;
+}
+
+.show {
+  display: block;
 }
